@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fAe-hd-gjs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--IndexVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="indexVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="indexVC" customModule="Typing_Speed_Tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIb-Lf-aao">
+                                <rect key="frame" x="160" y="108" width="2416" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" systemColor="systemTealColor"/>
+                                <color key="highlightedColor" name="AccentColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kW-Ue-cHP">
+                                <rect key="frame" x="27" y="368" width="350" height="683"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <string key="text">The current world record for the fastest typist is Barbara Blackburn (typing in English). Mrs Barbara Blackburn of Salem, Oregon maintained a speed of 150 wpm for 50 minutes (37,500 keystrokes) and attained a speed of 170 wpm using the Dvorak Simplified Keyboard system. Her top speed was recorded at 212 wpm.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" systemColor="systemBrownColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's test your typing speed. ----&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL7-RX-inH">
+                                <rect key="frame" x="27" y="1124" width="312" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" systemColor="systemMintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdm-nW-9Ez">
+                                <rect key="frame" x="102" y="736" width="199" height="45"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Lets Go!">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BSK-mn-716"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We welcome you here in typing speed tester." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQE-lv-upX">
+                                <rect key="frame" x="27" y="203" width="350" height="148"/>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="30"/>
+                                <color key="textColor" systemColor="systemMintColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="tertiaryLabelColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.45579725503921509" green="0.18135261153196855" blue="0.4209299493263306" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8kW-Ue-cHP" secondAttribute="bottom" constant="287" id="0TQ-Fj-cew"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kdm-nW-9Ez" secondAttribute="trailing" constant="113" id="3bp-pM-eUd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zQE-lv-upX" secondAttribute="bottom" constant="510" id="5dw-zF-Bil"/>
+                            <constraint firstItem="kdm-nW-9Ez" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="6Ih-w2-fzH"/>
+                            <constraint firstItem="zQE-lv-upX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:64" id="CKZ-kn-WwR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QL7-RX-inH" secondAttribute="trailing" constant="75" id="IeL-c0-BHf"/>
+                            <constraint firstItem="8kW-Ue-cHP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="280" id="Ptz-xp-Zfm"/>
+                            <constraint firstItem="8kW-Ue-cHP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="Ujw-XY-Xc6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kdm-nW-9Ez" secondAttribute="bottom" constant="81" id="W6q-x8-Q6D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zQE-lv-upX" secondAttribute="trailing" constant="37" id="Xbd-iV-cTh"/>
+                            <constraint firstItem="QL7-RX-inH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="dgV-Rv-5iH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8kW-Ue-cHP" secondAttribute="trailing" constant="37" id="iBa-od-bCf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QL7-RX-inH" secondAttribute="bottom" constant="188.5" id="pJl-SV-Isg"/>
+                            <constraint firstItem="zQE-lv-upX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.165179" id="pxt-CM-3h4"/>
+                            <constraint firstItem="zQE-lv-upX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.845411" id="zml-F9-dXZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6ji-4j-f6W"/>
+                    <connections>
+                        <outlet property="button" destination="kdm-nW-9Ez" id="zTb-w2-Lkw"/>
+                        <outlet property="greeetings" destination="GIb-Lf-aao" id="Bug-Ko-wLA"/>
+                        <outlet property="info" destination="8kW-Ue-cHP" id="B9Y-Km-cmb"/>
+                        <outlet property="welcome" destination="zQE-lv-upX" id="RNE-zH-AnH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="-366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E4M-eY-1Xv">
+            <objects>
+                <viewController id="4QY-Us-Xqf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p8B-CG-ShC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="pfs-yB-K7J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NWu-wH-ctB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="343"/>
+        </scene>
+        <!--Dash BoardVC-->
+        <scene sceneID="Vyf-Gv-ZL2">
+            <objects>
+                <viewController storyboardIdentifier="dashBoardVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="p4K-Df-JAw" customClass="dashBoardVC" customModule="Typing_Speed_Tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PLA-3G-ad9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the level of typing according to your strength." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHu-7J-dh7">
+                                <rect key="frame" x="22" y="160" width="381" height="117"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="NyY-sB-rT6">
+                                <rect key="frame" x="99" y="321" width="191.5" height="310.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMp-CH-2JQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="191.5" height="47.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Beginner">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHE-ip-MbU">
+                                        <rect key="frame" x="0.0" y="131.5" width="191.5" height="47.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Intermediate">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a10-y5-gbd">
+                                        <rect key="frame" x="0.0" y="263" width="191.5" height="47.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Professional">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <rect key="contentStretch" x="0.94999999999999996" y="0.0" width="1" height="1"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed Tester" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X51-j3-4Vt">
+                                <rect key="frame" x="127" y="97" width="135.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="80N-R5-x4j"/>
+                        <color key="backgroundColor" red="0.45579725500000001" green="0.18135261150000001" blue="0.42092994929999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="80N-R5-x4j" firstAttribute="trailing" secondItem="sHu-7J-dh7" secondAttribute="trailing" constant="11" id="7ly-9m-GJX"/>
+                            <constraint firstItem="X51-j3-4Vt" firstAttribute="leading" secondItem="80N-R5-x4j" secondAttribute="leading" constant="127" id="ARe-gg-6q8"/>
+                            <constraint firstItem="80N-R5-x4j" firstAttribute="bottom" secondItem="NyY-sB-rT6" secondAttribute="bottom" constant="230.5" id="KiB-Mn-8Ce"/>
+                            <constraint firstItem="X51-j3-4Vt" firstAttribute="top" secondItem="80N-R5-x4j" secondAttribute="top" constant="53" id="LTP-S3-NQM"/>
+                            <constraint firstItem="NyY-sB-rT6" firstAttribute="leading" secondItem="80N-R5-x4j" secondAttribute="leading" constant="99" id="R16-c4-Xwy"/>
+                            <constraint firstItem="80N-R5-x4j" firstAttribute="bottom" secondItem="sHu-7J-dh7" secondAttribute="bottom" constant="585" id="Rdp-Nw-uHp"/>
+                            <constraint firstItem="sHu-7J-dh7" firstAttribute="top" secondItem="80N-R5-x4j" secondAttribute="top" constant="116" id="cN4-Ic-kOp"/>
+                            <constraint firstItem="sHu-7J-dh7" firstAttribute="leading" secondItem="80N-R5-x4j" secondAttribute="leading" constant="22" id="ggU-jx-1Ui"/>
+                            <constraint firstItem="80N-R5-x4j" firstAttribute="trailing" secondItem="NyY-sB-rT6" secondAttribute="trailing" constant="123.5" id="iCX-Eb-EXL"/>
+                            <constraint firstItem="80N-R5-x4j" firstAttribute="trailing" secondItem="X51-j3-4Vt" secondAttribute="trailing" constant="151.5" id="u6s-b1-byV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="heading" destination="X51-j3-4Vt" id="Mtw-C6-Mdq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXA-H1-DQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2271.0144927536235" y="-341.51785714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kXg-T1-HDJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fAe-hd-gjs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="W1R-8U-li7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XZy-GK-9Gg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6o-6N-rGe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-330" y="-366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
